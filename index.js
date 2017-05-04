@@ -2,7 +2,7 @@ const path = require('path');
 const through = require('through2');
 const applySourceMap = require('vinyl-sourcemaps-apply');
 const PluginError = require('gulp-util').PluginError;
-const prepack = require('prepack');
+const prepack = require('prepack').prepack;
 
 const reSourceMapComment = /\n\/\/# sourceMappingURL=.+?$/;
 
